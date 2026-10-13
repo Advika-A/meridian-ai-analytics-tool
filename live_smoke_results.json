@@ -1,0 +1,897 @@
+{
+  "run_at": "2026-10-13T17:22:16+00:00",
+  "workbook": "C:\\Users\\advik\\Projects\\projects\\optiv\\supporting material\\Meridian_Vendor_Input.xlsx",
+  "timeout_seconds": 20,
+  "vendors": [
+    {
+      "name": "AutomWorx",
+      "vendor_id": "V-001",
+      "website": "www.automworx.com",
+      "candidates": 9,
+      "fetchable": 7,
+      "pages": [
+        {
+          "url": "https://www.automworx.com",
+          "source_type": "official",
+          "status": "ok",
+          "title": "AutomWorx | UC4, AppWorx, Automic Consulting",
+          "chars_extracted": 3031,
+          "error": null,
+          "retrieved_at": "2026-10-13T17:22:16+00:00",
+          "evidence_count": 2
+        },
+        {
+          "url": "https://www.automworx.com/privacy",
+          "source_type": "privacy",
+          "status": "ok",
+          "title": "Privacy Policy | AutomWorx",
+          "chars_extracted": 8842,
+          "error": null,
+          "retrieved_at": "2026-10-13T17:22:17+00:00",
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.automworx.com/privacy-policy",
+          "source_type": "privacy",
+          "status": "ok",
+          "title": "Privacy Policy | AutomWorx",
+          "chars_extracted": 8842,
+          "error": null,
+          "retrieved_at": "2026-10-13T17:22:17+00:00",
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.automworx.com/security",
+          "source_type": "security",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.automworx.com/security",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.automworx.com/trust",
+          "source_type": "security",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.automworx.com/trust",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.automworx.com/legal",
+          "source_type": "legal",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.automworx.com/legal",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.automworx.com/services",
+          "source_type": "docs",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.automworx.com/services",
+          "retrieved_at": null,
+          "evidence_count": 0
+        }
+      ],
+      "evidence": [
+        {
+          "category": "ai_capability_claim",
+          "heuristic_score": 0.45,
+          "snippet": "Learn more about custom development > October 8, 2026 3 min read Upgrade in Place or Move: How to Tell Which One You Are Looking At Read more > October 8, 2026 4 min read Before You Put AI Agents on the Schedule: Start With What Already Runs Read more > September 30, 2026 2 min read Automate With In",
+          "source_url": "https://www.automworx.com",
+          "matched_terms": [
+            "AI Agents"
+          ]
+        },
+        {
+          "category": "privacy_commitment",
+          "heuristic_score": 0.45,
+          "snippet": "Learn more about custom development > October 8, 2026 3 min read Upgrade in Place or Move: How to Tell Which One You Are Looking At Read more > October 8, 2026 4 min read Before You Put AI Agents on the Schedule: Start With What Already Runs Read more > September 30, 2026 2 min read Automate With In",
+          "source_url": "https://www.automworx.com",
+          "matched_terms": [
+            "Privacy Policy"
+          ]
+        },
+        {
+          "category": "security_control",
+          "heuristic_score": 0.45,
+          "snippet": "AutomWorx uses the following methods for this purpose: \u2013 SSL Protocol When personal information (such as a credit card number) is transmitted to other websites, it is protected through the use of encryption, such as the Secure Sockets Layer (SSL) protocol.",
+          "source_url": "https://www.automworx.com/privacy-policy/",
+          "matched_terms": [
+            "encryption"
+          ]
+        },
+        {
+          "category": "privacy_commitment",
+          "heuristic_score": 0.55,
+          "snippet": "Privacy Policy | AutomWorx Skip to content Consulting Services Implementations Custom Solutions Training Upgrades Migrations Consulting as a Service (CaaS) Applications Ellucian Banner Oracle E-Business Suite AMISYS Advance Automation Oracle Utilities Support Licensing About The Team Resources Testi",
+          "source_url": "https://www.automworx.com/privacy-policy/",
+          "matched_terms": [
+            "Privacy Policy"
+          ]
+        },
+        {
+          "category": "third_party_sharing",
+          "heuristic_score": 0.5,
+          "snippet": "AutomWorx may share data with trusted partners to help perform statistical analysis, send you email or postal mail, provide customer support, or arrange for deliveries.",
+          "source_url": "https://www.automworx.com/privacy-policy/",
+          "matched_terms": [
+            "share data"
+          ]
+        }
+      ],
+      "summary": {
+        "pages_retrieved": 3,
+        "pages_failed": 4,
+        "pages_skipped_or_empty": 0,
+        "evidence_items": 8,
+        "has_ai_claim": true
+      }
+    },
+    {
+      "name": "Fiserv, Inc.",
+      "vendor_id": "V-002",
+      "website": "www.fiserv.com",
+      "candidates": 15,
+      "fetchable": 13,
+      "pages": [
+        {
+          "url": "https://www.fiserv.com",
+          "source_type": "official",
+          "status": "ok",
+          "title": "Financial Services Technology, Mobile Banking, Payments | Fiserv",
+          "chars_extracted": 3877,
+          "error": null,
+          "retrieved_at": "2026-10-13T17:22:24+00:00",
+          "evidence_count": 1
+        },
+        {
+          "url": "https://www.fiserv.com/en-us/legal/privacy.html",
+          "source_type": "privacy",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fiserv.com/en-us/legal/privacy.html",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fiserv.com/en-us/about-fiserv/news-and-events/news-releases/2024/fiserv-generative-ai.html",
+          "source_type": "ai_docs",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fiserv.com/en-us/about-fiserv/news-and-events/news-releases/2024/fiserv-generative-ai.html",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fiserv.com/en-us/legal.html",
+          "source_type": "legal",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fiserv.com/en-us/legal.html",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fiserv.com/privacy",
+          "source_type": "privacy",
+          "status": "ok",
+          "title": "Privacy-notice   | Fiserv",
+          "chars_extracted": 55050,
+          "error": null,
+          "retrieved_at": "2026-10-13T17:22:26+00:00",
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fiserv.com/privacy-policy",
+          "source_type": "privacy",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fiserv.com/privacy-policy",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fiserv.com/security",
+          "source_type": "security",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fiserv.com/security",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fiserv.com/trust",
+          "source_type": "security",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fiserv.com/trust",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fiserv.com/legal",
+          "source_type": "legal",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fiserv.com/legal",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fiserv.com/ai",
+          "source_type": "ai_docs",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fiserv.com/ai",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fiserv.com/platform/ai",
+          "source_type": "ai_docs",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fiserv.com/platform/ai",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fiserv.com/docs",
+          "source_type": "docs",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fiserv.com/docs",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fiserv.com/subprocessors",
+          "source_type": "privacy",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fiserv.com/subprocessors",
+          "retrieved_at": null,
+          "evidence_count": 0
+        }
+      ],
+      "evidence": [
+        {
+          "category": "data_processing",
+          "heuristic_score": 0.45,
+          "snippet": "Tax Strategy Modern Slavery Statement Trademark Usage Guidelines Terms of Use Do Not Sell My Personal Data | Security | Accessibility Statement",
+          "source_url": "https://www.fiserv.com",
+          "matched_terms": [
+            "Personal Data"
+          ]
+        },
+        {
+          "category": "data_processing",
+          "heuristic_score": 0.55,
+          "snippet": "Privacy Notice This \u201cPrivacy Notice\u201d describes the practices of Fiserv, Inc., including its subsidiaries and affiliates (collectively, \u201cFiserv\u201d, \u201cwe\u201d, \u201cus\u201d, or \u201cour\u201d) and the rights and choices available to individuals, regarding personal data.",
+          "source_url": "https://www.fiserv.com/en/about-fiserv/privacy-notice.html?rdf=/privacy&rdc=2021-10-01&rdr=2023-12-31",
+          "matched_terms": [
+            "personal data"
+          ]
+        },
+        {
+          "category": "privacy_commitment",
+          "heuristic_score": 0.55,
+          "snippet": "When you interact with our pages on those third-party platforms, the third-party\u2019s privacy policy will govern your interactions on the relevant platform.",
+          "source_url": "https://www.fiserv.com/en/about-fiserv/privacy-notice.html?rdf=/privacy&rdc=2021-10-01&rdr=2023-12-31",
+          "matched_terms": [
+            "privacy policy"
+          ]
+        },
+        {
+          "category": "third_party_sharing",
+          "heuristic_score": 0.55,
+          "snippet": "These may include parties that interact with us directly (such as individuals who download our mobile applications or job applicants), parties to which we provide goods or services (such as clients, banks or financial institutions, merchants, and individuals) (collectively, \u201cclients\u201d), parties that ",
+          "source_url": "https://www.fiserv.com/en/about-fiserv/privacy-notice.html?rdf=/privacy&rdc=2021-10-01&rdr=2023-12-31",
+          "matched_terms": [
+            "service providers"
+          ]
+        }
+      ],
+      "summary": {
+        "pages_retrieved": 2,
+        "pages_failed": 11,
+        "pages_skipped_or_empty": 0,
+        "evidence_items": 4,
+        "has_ai_claim": false
+      }
+    },
+    {
+      "name": "Financial Statement Services, Inc. (FSSI)",
+      "vendor_id": "V-003",
+      "website": "www.fssi-ca.com",
+      "candidates": 11,
+      "fetchable": 9,
+      "pages": [
+        {
+          "url": "https://www.fssi-ca.com",
+          "source_type": "official",
+          "status": "ok",
+          "title": "Print and Mail Outsourcing | Secure eDelivery | FSSI",
+          "chars_extracted": 14163,
+          "error": null,
+          "retrieved_at": "2026-10-13T17:22:38+00:00",
+          "evidence_count": 3
+        },
+        {
+          "url": "https://www.fssi-ca.com/privacy",
+          "source_type": "privacy",
+          "status": "ok",
+          "title": "Privacy Policy | FSSI",
+          "chars_extracted": 38459,
+          "error": null,
+          "retrieved_at": "2026-10-13T17:22:44+00:00",
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fssi-ca.com/security-compliance",
+          "source_type": "security",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fssi-ca.com/security-compliance",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fssi-ca.com/privacy-policy",
+          "source_type": "privacy",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fssi-ca.com/privacy-policy",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fssi-ca.com/security",
+          "source_type": "security",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fssi-ca.com/security",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fssi-ca.com/trust",
+          "source_type": "security",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fssi-ca.com/trust",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fssi-ca.com/legal",
+          "source_type": "legal",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fssi-ca.com/legal",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fssi-ca.com/compliance",
+          "source_type": "legal",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.fssi-ca.com/compliance",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.fssi-ca.com/services",
+          "source_type": "docs",
+          "status": "ok",
+          "title": "Secure Print and Mail Solutions | Capabilities | FSSI",
+          "chars_extracted": 7292,
+          "error": null,
+          "retrieved_at": "2026-10-13T17:22:55+00:00",
+          "evidence_count": 0
+        }
+      ],
+      "evidence": [
+        {
+          "category": "data_processing",
+          "heuristic_score": 0.55,
+          "snippet": "Print and Mail Outsourcing | Secure eDelivery | FSSI Services Services Overview Print Mail Electronic Presentment eDelivery Statement Printing and Mailing Transactional Print and Mail Personalized Direct Mail Marketing Workflow Tracking and Reporting Letter Management Statement Messaging Document Re",
+          "source_url": "https://www.fssi-ca.com",
+          "matched_terms": [
+            "Data Processing"
+          ]
+        },
+        {
+          "category": "security_control",
+          "heuristic_score": 0.55,
+          "snippet": "Print and Mail Outsourcing | Secure eDelivery | FSSI Services Services Overview Print Mail Electronic Presentment eDelivery Statement Printing and Mailing Transactional Print and Mail Personalized Direct Mail Marketing Workflow Tracking and Reporting Letter Management Statement Messaging Document Re",
+          "source_url": "https://www.fssi-ca.com",
+          "matched_terms": [
+            "SOC 2"
+          ]
+        },
+        {
+          "category": "privacy_commitment",
+          "heuristic_score": 0.45,
+          "snippet": "Suite 100 Coppell, TX 75019 469.637.3600 15 Blackstone Valley Place Lincoln, RI 02865 800.352.7375 1500 Tradeport Drive Suite B Orlando, FL 32824 800.852.3174 Print Outsourcing Mail Outsourcing Electronic Bill Presentment eDelivery Workflow Tracking and Reporting Splash Direct Mail Solutions Capabil",
+          "source_url": "https://www.fssi-ca.com",
+          "matched_terms": [
+            "Privacy Policy"
+          ]
+        },
+        {
+          "category": "data_processing",
+          "heuristic_score": 0.55,
+          "snippet": "Privacy Policy | FSSI Services Services Overview Print Mail Electronic Presentment eDelivery Statement Printing and Mailing Transactional Print and Mail Personalized Direct Mail Marketing Workflow Tracking and Reporting Letter Management Statement Messaging Document Redesign Development and Creative",
+          "source_url": "https://www.fssi-ca.com/privacy/",
+          "matched_terms": [
+            "Data Processing"
+          ]
+        },
+        {
+          "category": "security_control",
+          "heuristic_score": 0.45,
+          "snippet": "Privacy Policy | FSSI Services Services Overview Print Mail Electronic Presentment eDelivery Statement Printing and Mailing Transactional Print and Mail Personalized Direct Mail Marketing Workflow Tracking and Reporting Letter Management Statement Messaging Document Redesign Development and Creative",
+          "source_url": "https://www.fssi-ca.com/privacy/",
+          "matched_terms": [
+            "SOC 2"
+          ]
+        }
+      ],
+      "summary": {
+        "pages_retrieved": 3,
+        "pages_failed": 6,
+        "pages_skipped_or_empty": 0,
+        "evidence_items": 10,
+        "has_ai_claim": false
+      }
+    },
+    {
+      "name": "Terrapin Technologies, Inc.",
+      "vendor_id": "V-004",
+      "website": "www.terrapintech.com",
+      "candidates": 10,
+      "fetchable": 8,
+      "pages": [
+        {
+          "url": "https://www.terrapintech.com",
+          "source_type": "official",
+          "status": "empty",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "No visible text was extracted.",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.terrapintech.com/privacy-policy",
+          "source_type": "privacy",
+          "status": "empty",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "No visible text was extracted.",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.terrapintech.com/privacy",
+          "source_type": "privacy",
+          "status": "empty",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "No visible text was extracted.",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.terrapintech.com/security",
+          "source_type": "security",
+          "status": "empty",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "No visible text was extracted.",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.terrapintech.com/trust",
+          "source_type": "security",
+          "status": "empty",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "No visible text was extracted.",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.terrapintech.com/legal",
+          "source_type": "legal",
+          "status": "empty",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "No visible text was extracted.",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.terrapintech.com/docs",
+          "source_type": "docs",
+          "status": "empty",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "No visible text was extracted.",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.terrapintech.com/ai",
+          "source_type": "ai_docs",
+          "status": "empty",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "No visible text was extracted.",
+          "retrieved_at": null,
+          "evidence_count": 0
+        }
+      ],
+      "evidence": [],
+      "summary": {
+        "pages_retrieved": 0,
+        "pages_failed": 0,
+        "pages_skipped_or_empty": 8,
+        "evidence_items": 0,
+        "has_ai_claim": false
+      }
+    },
+    {
+      "name": "BNY",
+      "vendor_id": "V-005",
+      "website": "www.bny.com",
+      "candidates": 12,
+      "fetchable": 10,
+      "pages": [
+        {
+          "url": "https://www.bny.com",
+          "source_type": "official",
+          "status": "ok",
+          "title": "BNY | Global Financial Services",
+          "chars_extracted": 8674,
+          "error": null,
+          "retrieved_at": "2026-10-13T17:23:03+00:00",
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.bny.com/content/dam/bny-mellon/documents/privacy/us-consumer-privacy-notice.pdf",
+          "source_type": "privacy",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.bny.com/content/dam/bny-mellon/documents/privacy/us-consumer-privacy-notice.pdf",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.bny.com/us/en/legal/privacy-notice.html",
+          "source_type": "privacy",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.bny.com/us/en/legal/privacy-notice.html",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.bny.com/us/en/legal/subprocessors.html",
+          "source_type": "privacy",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.bny.com/us/en/legal/subprocessors.html",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.bny.com/privacy",
+          "source_type": "privacy",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.bny.com/privacy",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.bny.com/privacy-policy",
+          "source_type": "privacy",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.bny.com/privacy-policy",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.bny.com/security",
+          "source_type": "security",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.bny.com/security",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.bny.com/trust",
+          "source_type": "security",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.bny.com/trust",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.bny.com/legal",
+          "source_type": "legal",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.bny.com/legal",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.bny.com/compliance",
+          "source_type": "legal",
+          "status": "failed",
+          "title": null,
+          "chars_extracted": 0,
+          "error": "HTTP 404 from https://www.bny.com/compliance",
+          "retrieved_at": null,
+          "evidence_count": 0
+        }
+      ],
+      "evidence": [
+        {
+          "category": "privacy_commitment",
+          "heuristic_score": 0.45,
+          "snippet": "Also, please be aware that when you use services provided by a third-party site, you're subject to that site's terms of service and privacy policy rules (i.e., sharing of personal information), which you should review carefully before proceeding.",
+          "source_url": "https://www.bny.com/corporate/global/en.html",
+          "matched_terms": [
+            "privacy policy"
+          ]
+        },
+        {
+          "category": "third_party_sharing",
+          "heuristic_score": 0.55,
+          "snippet": "This link directs you to a third-party website.",
+          "source_url": "https://www.bny.com/corporate/global/en.html",
+          "matched_terms": [
+            "third-party"
+          ]
+        }
+      ],
+      "summary": {
+        "pages_retrieved": 1,
+        "pages_failed": 9,
+        "pages_skipped_or_empty": 0,
+        "evidence_items": 2,
+        "has_ai_claim": false
+      }
+    },
+    {
+      "name": "The Clearing House Payments Company L.L.C.",
+      "vendor_id": "V-006",
+      "website": "www.theclearinghouse.org",
+      "candidates": 13,
+      "fetchable": 11,
+      "pages": [
+        {
+          "url": "https://www.theclearinghouse.org",
+          "source_type": "official",
+          "status": "ok",
+          "title": "Home | The Clearing House",
+          "chars_extracted": 3800,
+          "error": null,
+          "retrieved_at": "2026-10-13T17:23:12+00:00",
+          "evidence_count": 1
+        },
+        {
+          "url": "https://www.theclearinghouse.org/payment-systems/rtp",
+          "source_type": "docs",
+          "status": "ok",
+          "title": "Real Time Payments | The Clearing House",
+          "chars_extracted": 7318,
+          "error": null,
+          "retrieved_at": "2026-10-13T17:23:14+00:00",
+          "evidence_count": 2
+        },
+        {
+          "url": "https://www.theclearinghouse.org/payment-systems/ach",
+          "source_type": "docs",
+          "status": "ok",
+          "title": "ACH Services | EPN Network ACH Processing | The Clearing House | The Clearing House",
+          "chars_extracted": 10643,
+          "error": null,
+          "retrieved_at": "2026-10-13T17:23:16+00:00",
+          "evidence_count": 2
+        },
+        {
+          "url": "https://www.theclearinghouse.org/legal-privacy",
+          "source_type": "privacy",
+          "status": "soft_404",
+          "title": "Page Not Found | The Clearing House",
+          "chars_extracted": 0,
+          "error": "Soft 404: page title indicates an error page: 'Page Not Found | The Clearing House'",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.theclearinghouse.org/privacy",
+          "source_type": "privacy",
+          "status": "soft_404",
+          "title": "Page Not Found | The Clearing House",
+          "chars_extracted": 0,
+          "error": "Soft 404: page title indicates an error page: 'Page Not Found | The Clearing House'",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.theclearinghouse.org/privacy-policy",
+          "source_type": "privacy",
+          "status": "ok",
+          "title": "Privacy Policy | The Clearing House",
+          "chars_extracted": 30304,
+          "error": null,
+          "retrieved_at": "2026-10-13T17:23:22+00:00",
+          "evidence_count": 3
+        },
+        {
+          "url": "https://www.theclearinghouse.org/security",
+          "source_type": "security",
+          "status": "soft_404",
+          "title": "Page Not Found | The Clearing House",
+          "chars_extracted": 0,
+          "error": "Soft 404: page title indicates an error page: 'Page Not Found | The Clearing House'",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.theclearinghouse.org/trust",
+          "source_type": "security",
+          "status": "soft_404",
+          "title": "Page Not Found | The Clearing House",
+          "chars_extracted": 0,
+          "error": "Soft 404: page title indicates an error page: 'Page Not Found | The Clearing House'",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.theclearinghouse.org/legal",
+          "source_type": "legal",
+          "status": "soft_404",
+          "title": "Page Not Found | The Clearing House",
+          "chars_extracted": 0,
+          "error": "Soft 404: page title indicates an error page: 'Page Not Found | The Clearing House'",
+          "retrieved_at": null,
+          "evidence_count": 0
+        },
+        {
+          "url": "https://www.theclearinghouse.org/payment-systems",
+          "source_type": "docs",
+          "status": "ok",
+          "title": "Networks & Services | The Clearing House",
+          "chars_extracted": 2554,
+          "error": null,
+          "retrieved_at": "2026-10-13T17:23:31+00:00",
+          "evidence_count": 1
+        },
+        {
+          "url": "https://www.theclearinghouse.org/compliance",
+          "source_type": "legal",
+          "status": "soft_404",
+          "title": "Page Not Found | The Clearing House",
+          "chars_extracted": 0,
+          "error": "Soft 404: page title indicates an error page: 'Page Not Found | The Clearing House'",
+          "retrieved_at": null,
+          "evidence_count": 0
+        }
+      ],
+      "evidence": [
+        {
+          "category": "privacy_commitment",
+          "heuristic_score": 0.45,
+          "snippet": "Earn your NCP today ECCHO Rules changes effective March 1, 2026 The Clearing House Site Footer News Events Careers Contact Us Privacy Policy Terms & Conditions Copyright and Legal \u00a9 The Clearing House Payments Company L.L.C. \u00d7 Due to scheduled website maintenance, no purchases will be processed from",
+          "source_url": "https://www.theclearinghouse.org",
+          "matched_terms": [
+            "Privacy Policy"
+          ]
+        },
+        {
+          "category": "privacy_commitment",
+          "heuristic_score": 0.45,
+          "snippet": "Insights The Clearing House Site Footer News Events Careers Contact Us Privacy Policy Terms & Conditions Copyright and Legal \u00a9 The Clearing House Payments Company L.L.C. \u00d7 Due to scheduled website maintenance, no purchases will be processed from Monday, December 2 - Sunday, December 8, 2024 .",
+          "source_url": "https://www.theclearinghouse.org/payment-systems/rtp",
+          "matched_terms": [
+            "Privacy Policy"
+          ]
+        },
+        {
+          "category": "third_party_sharing",
+          "heuristic_score": 0.6,
+          "snippet": "Third-Party Service Providers: Your Fast Track to the RTP network Connecting to the RTP network doesn't require a complex lift.",
+          "source_url": "https://www.theclearinghouse.org/payment-systems/rtp",
+          "matched_terms": [
+            "Third-Party",
+            "Service Providers"
+          ]
+        },
+        {
+          "category": "privacy_commitment",
+          "heuristic_score": 0.45,
+          "snippet": "Talk to an Expert The Clearing House Site Footer News Events Careers Contact Us Privacy Policy Terms & Conditions Copyright and Legal \u00a9 The Clearing House Payments Company L.L.C. \u00d7 Due to scheduled website maintenance, no purchases will be processed from Monday, December 2 - Sunday, December 8, 2024",
+          "source_url": "https://www.theclearinghouse.org/payment-systems/ach",
+          "matched_terms": [
+            "Privacy Policy"
+          ]
+        },
+        {
+          "category": "third_party_sharing",
+          "heuristic_score": 0.55,
+          "snippet": "It supports two common data-sharing models: Direct model : a financial institution connects directly to the DDA Token Service to support its data-sharing flows Using a Technical Agent : a third party can request tokens on behalf of a participating financial institution, which may reduce implementati",
+          "source_url": "https://www.theclearinghouse.org/payment-systems/ach",
+          "matched_terms": [
+            "third party"
+          ]
+        }
+      ],
+      "summary": {
+        "pages_retrieved": 5,
+        "pages_failed": 6,
+        "pages_skipped_or_empty": 0,
+        "evidence_items": 9,
+        "has_ai_claim": false
+      }
+    }
+  ],
+  "total_summary": {
+    "vendors_count": 6,
+    "total_candidates": 70,
+    "total_pages_ok": 14,
+    "total_pages_failed": 36,
+    "total_evidence": 33,
+    "vendors_with_no_pages": [
+      "Terrapin Technologies, Inc."
+    ],
+    "vendors_with_ai_signals": [
+      "AutomWorx"
+    ]
+  }
+}

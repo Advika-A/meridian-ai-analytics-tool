@@ -1,0 +1,821 @@
+{
+  "run_at": "2026-10-13T18:12:23+00:00",
+  "workbook": "C:\\Users\\advik\\Projects\\projects\\optiv\\supporting material\\Meridian_Vendor_Input.xlsx",
+  "timeout_seconds": 15,
+  "vendors_count": 6,
+  "vendors": [
+    {
+      "name": "AutomWorx",
+      "vendor_id": "V-001",
+      "product": "Implementation, migration, managed support and modernization of the enterprise workload automation and batch scheduling estate.",
+      "website": "www.automworx.com",
+      "criticality": {
+        "score": 61.5,
+        "level": "medium"
+      },
+      "candidate_count": 5,
+      "fetchable_count": 3,
+      "search_lead_count": 2,
+      "urls_attempted": [
+        {
+          "url": "https://www.automworx.com/",
+          "final_url": "https://www.automworx.com/",
+          "discovery_method": "official_intake",
+          "source_relevance": "service_direct",
+          "http_status": 200,
+          "extraction_status": "ok",
+          "failure_reason": null,
+          "title": "AutomWorx | UC4, AppWorx, Automic Consulting",
+          "content_length_chars": 2173,
+          "retrieved_at": "2026-10-13T18:12:24+00:00",
+          "elapsed_seconds": 0.6
+        },
+        {
+          "url": "https://www.automworx.com/privacy",
+          "final_url": "https://www.automworx.com/privacy-policy/",
+          "discovery_method": "path_probe",
+          "source_relevance": "privacy_security",
+          "http_status": 200,
+          "extraction_status": "ok",
+          "failure_reason": null,
+          "title": "Privacy Policy | AutomWorx",
+          "content_length_chars": 8002,
+          "retrieved_at": "2026-10-13T18:12:24+00:00",
+          "elapsed_seconds": 0.6
+        },
+        {
+          "url": "https://www.automworx.com/consulting-services",
+          "final_url": "https://www.automworx.com/consulting-services/",
+          "discovery_method": "known_official",
+          "source_relevance": "service_direct",
+          "http_status": 200,
+          "extraction_status": "ok",
+          "failure_reason": null,
+          "title": "Workload Automation Consulting Services | AutomWorx",
+          "content_length_chars": 1150,
+          "retrieved_at": "2026-10-13T18:12:25+00:00",
+          "elapsed_seconds": 0.5
+        }
+      ],
+      "successful_non_empty_pages": {
+        "count": 3,
+        "urls": [
+          "https://www.automworx.com/",
+          "https://www.automworx.com/privacy",
+          "https://www.automworx.com/consulting-services"
+        ]
+      },
+      "empty_or_js_rendered_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "soft_404_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "failed_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "evidence_excerpts": [
+        {
+          "evidence_id": "5bc27194",
+          "category": "ai_capability_claim",
+          "relevance": "corporate_general",
+          "verification_status": "requires_human_review",
+          "heuristic_score": 0.45,
+          "snippet": "October 8, 2026 4 min read Before You Put AI Agents on the Schedule: Start With What Already Runs",
+          "source_url": "https://www.automworx.com/",
+          "matched_terms": [
+            "AI Agents"
+          ],
+          "rationale": "Matched term(s): AI Agents. Heuristic match only, not a conclusion. Mentioned in corporate announcement or general marketing; not confirmed for Meridian's specific service."
+        },
+        {
+          "evidence_id": "9c60dbad",
+          "category": "security_control",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "AutomWorx uses the following methods for this purpose: \u2013 SSL Protocol When personal information (such as a credit card number) is transmitted to other websites, it is protected through the use of encryption, such as the Secure Sockets Layer (SSL) protocol.",
+          "source_url": "https://www.automworx.com/privacy-policy/",
+          "matched_terms": [
+            "encryption"
+          ],
+          "rationale": "Matched term(s): encryption. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        },
+        {
+          "evidence_id": "dbd9c4d3",
+          "category": "privacy_commitment",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "Privacy Policy Last Revision: November 11, 2025 Protecting your private information is our priority.",
+          "source_url": "https://www.automworx.com/privacy-policy/",
+          "matched_terms": [
+            "Privacy Policy"
+          ],
+          "rationale": "Matched term(s): Privacy Policy. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        },
+        {
+          "evidence_id": "3cf41e37",
+          "category": "third_party_sharing",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "AutomWorx may share data with trusted partners to help perform statistical analysis, send you email or postal mail, provide customer support, or arrange for deliveries.",
+          "source_url": "https://www.automworx.com/privacy-policy/",
+          "matched_terms": [
+            "share data"
+          ],
+          "rationale": "Matched term(s): share data. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        }
+      ],
+      "assessment": {
+        "status": "corporate_signal_only",
+        "risk_level": "not_rated",
+        "risk_score": null,
+        "drivers": [
+          "intake criticality medium (61.5)",
+          "corporate AI signal (1 item(s) require service verification)"
+        ],
+        "caveats": [
+          "Public-web heuristics are incomplete and can miss or overstate AI usage.",
+          "Keyword matches are not confirmation of product behaviour or control effectiveness.",
+          "Absence of public evidence is not proof that the vendor does not use AI.",
+          "Treat this as a draft for analyst review, not an audit opinion.",
+          "Corporate-level AI mentions or blog articles do NOT establish that AI is used in the contracted service.",
+          "AI risk is NOT rated until service-level applicability is confirmed by human analyst review."
+        ]
+      },
+      "unresolved_research_gaps": [
+        "Corporate-level AI announcements exist, but no evidence was found confirming AI usage in the specific service Meridian purchases.",
+        "Service-level data flows, model providers, and processing terms remain unverified."
+      ]
+    },
+    {
+      "name": "Fiserv, Inc.",
+      "vendor_id": "V-002",
+      "product": "The DNA core banking platform, a real-time account processing system supporting customer account management, transaction processing and core banking operations.",
+      "website": "www.fiserv.com",
+      "criticality": {
+        "score": 95.5,
+        "level": "critical"
+      },
+      "candidate_count": 6,
+      "fetchable_count": 4,
+      "search_lead_count": 2,
+      "urls_attempted": [
+        {
+          "url": "https://www.fiserv.com/",
+          "final_url": "https://www.fiserv.com/",
+          "discovery_method": "official_intake",
+          "source_relevance": "service_direct",
+          "http_status": 200,
+          "extraction_status": "ok",
+          "failure_reason": null,
+          "title": "Financial Services Technology, Mobile Banking, Payments | Fiserv",
+          "content_length_chars": 1493,
+          "retrieved_at": "2026-10-13T18:12:25+00:00",
+          "elapsed_seconds": 0.4
+        },
+        {
+          "url": "https://www.fiserv.com/privacy",
+          "final_url": "https://www.fiserv.com/en/about-fiserv/privacy-notice.html?rdf=/privacy&rdc=2021-10-01&rdr=2023-12-31",
+          "discovery_method": "path_probe",
+          "source_relevance": "privacy_security",
+          "http_status": 200,
+          "extraction_status": "ok",
+          "failure_reason": null,
+          "title": "Privacy-notice   | Fiserv",
+          "content_length_chars": 52707,
+          "retrieved_at": "2026-10-13T18:12:27+00:00",
+          "elapsed_seconds": 1.6
+        },
+        {
+          "url": "https://www.fiserv.com/en/about-fiserv/privacy-notice.html",
+          "final_url": "https://www.fiserv.com/en/about-fiserv/privacy-notice.html",
+          "discovery_method": "known_official",
+          "source_relevance": "privacy_security",
+          "http_status": 200,
+          "extraction_status": "ok",
+          "failure_reason": null,
+          "title": "Privacy-notice   | Fiserv",
+          "content_length_chars": 52707,
+          "retrieved_at": "2026-10-13T18:12:28+00:00",
+          "elapsed_seconds": 0.8
+        },
+        {
+          "url": "https://www.fiserv.com/en/solutions/financial-institutions/core-banking.html",
+          "final_url": "https://www.fiserv.com/en/solutions/financial-institutions/core-banking.html",
+          "discovery_method": "known_official",
+          "source_relevance": "service_direct",
+          "http_status": null,
+          "extraction_status": "failed",
+          "failure_reason": "HTTP 404 from https://www.fiserv.com/en/solutions/financial-institutions/core-banking.html",
+          "title": null,
+          "content_length_chars": 0,
+          "retrieved_at": null,
+          "elapsed_seconds": 1.3
+        }
+      ],
+      "successful_non_empty_pages": {
+        "count": 3,
+        "urls": [
+          "https://www.fiserv.com/",
+          "https://www.fiserv.com/privacy",
+          "https://www.fiserv.com/en/about-fiserv/privacy-notice.html"
+        ]
+      },
+      "empty_or_js_rendered_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "soft_404_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "failed_pages": {
+        "count": 1,
+        "urls": [
+          "https://www.fiserv.com/en/solutions/financial-institutions/core-banking.html"
+        ]
+      },
+      "evidence_excerpts": [
+        {
+          "evidence_id": "c19d5ac5",
+          "category": "data_processing",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "Privacy Notice This \u201cPrivacy Notice\u201d describes the practices of Fiserv, Inc., including its subsidiaries and affiliates (collectively, \u201cFiserv\u201d, \u201cwe\u201d, \u201cus\u201d, or \u201cour\u201d) and the rights and choices available to individuals, regarding personal data.",
+          "source_url": "https://www.fiserv.com/en/about-fiserv/privacy-notice.html?rdf=/privacy&rdc=2021-10-01&rdr=2023-12-31",
+          "matched_terms": [
+            "personal data"
+          ],
+          "rationale": "Matched term(s): personal data. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        },
+        {
+          "evidence_id": "de56f674",
+          "category": "privacy_commitment",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "When you interact with our pages on those third-party platforms, the third-party\u2019s privacy policy will govern your interactions on the relevant platform.",
+          "source_url": "https://www.fiserv.com/en/about-fiserv/privacy-notice.html?rdf=/privacy&rdc=2021-10-01&rdr=2023-12-31",
+          "matched_terms": [
+            "privacy policy"
+          ],
+          "rationale": "Matched term(s): privacy policy. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        },
+        {
+          "evidence_id": "39040a54",
+          "category": "third_party_sharing",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "These may include parties that interact with us directly (such as individuals who download our mobile applications or job applicants), parties to which we provide goods or services (such as clients, banks or financial institutions, merchants, and individuals) (collectively, \u201cclients\u201d), parties that provide services to us (such as vendors) (collectively, \u201c service providers \u201d ), and other parties with whom we offer or provide products and services (such as independent sales organizations) (collectively, \u201c partners \u201d ).",
+          "source_url": "https://www.fiserv.com/en/about-fiserv/privacy-notice.html?rdf=/privacy&rdc=2021-10-01&rdr=2023-12-31",
+          "matched_terms": [
+            "service providers"
+          ],
+          "rationale": "Matched term(s): service providers. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        },
+        {
+          "evidence_id": "5017d884",
+          "category": "data_processing",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "Privacy Notice This \u201cPrivacy Notice\u201d describes the practices of Fiserv, Inc., including its subsidiaries and affiliates (collectively, \u201cFiserv\u201d, \u201cwe\u201d, \u201cus\u201d, or \u201cour\u201d) and the rights and choices available to individuals, regarding personal data.",
+          "source_url": "https://www.fiserv.com/en/about-fiserv/privacy-notice.html",
+          "matched_terms": [
+            "personal data"
+          ],
+          "rationale": "Matched term(s): personal data. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        },
+        {
+          "evidence_id": "d169dbb5",
+          "category": "privacy_commitment",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "When you interact with our pages on those third-party platforms, the third-party\u2019s privacy policy will govern your interactions on the relevant platform.",
+          "source_url": "https://www.fiserv.com/en/about-fiserv/privacy-notice.html",
+          "matched_terms": [
+            "privacy policy"
+          ],
+          "rationale": "Matched term(s): privacy policy. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        },
+        {
+          "evidence_id": "aebe1294",
+          "category": "third_party_sharing",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "These may include parties that interact with us directly (such as individuals who download our mobile applications or job applicants), parties to which we provide goods or services (such as clients, banks or financial institutions, merchants, and individuals) (collectively, \u201cclients\u201d), parties that provide services to us (such as vendors) (collectively, \u201c service providers \u201d ), and other parties with whom we offer or provide products and services (such as independent sales organizations) (collectively, \u201c partners \u201d ).",
+          "source_url": "https://www.fiserv.com/en/about-fiserv/privacy-notice.html",
+          "matched_terms": [
+            "service providers"
+          ],
+          "rationale": "Matched term(s): service providers. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        }
+      ],
+      "assessment": {
+        "status": "insufficient_evidence",
+        "risk_level": "not_rated",
+        "risk_score": null,
+        "drivers": [
+          "intake criticality critical (95.5)"
+        ],
+        "caveats": [
+          "Public-web heuristics are incomplete and can miss or overstate AI usage.",
+          "Keyword matches are not confirmation of product behaviour or control effectiveness.",
+          "Absence of public evidence is not proof that the vendor does not use AI.",
+          "Treat this as a draft for analyst review, not an audit opinion.",
+          "Other keywords or a provider disclosure may be present, but no AI capability claim was identified.",
+          "Not rated does not mean low risk or no AI usage."
+        ]
+      },
+      "unresolved_research_gaps": [
+        "No specific AI feature claim found in public documentation."
+      ]
+    },
+    {
+      "name": "Financial Statement Services, Inc. (FSSI)",
+      "vendor_id": "V-003",
+      "product": "Produces and distributes printed account statements and IRS tax documents, produces regulatory notices, and hosts the electronic notice platform.",
+      "website": "www.fssi-ca.com",
+      "criticality": {
+        "score": 82.0,
+        "level": "high"
+      },
+      "candidate_count": 4,
+      "fetchable_count": 2,
+      "search_lead_count": 2,
+      "urls_attempted": [
+        {
+          "url": "https://www.fssi-ca.com/",
+          "final_url": "https://www.fssi-ca.com/",
+          "discovery_method": "official_intake",
+          "source_relevance": "service_direct",
+          "http_status": 200,
+          "extraction_status": "ok",
+          "failure_reason": null,
+          "title": "Print and Mail Outsourcing | Secure eDelivery | FSSI",
+          "content_length_chars": 10814,
+          "retrieved_at": "2026-10-13T18:12:33+00:00",
+          "elapsed_seconds": 3.5
+        },
+        {
+          "url": "https://www.fssi-ca.com/privacy",
+          "final_url": "https://www.fssi-ca.com/privacy/",
+          "discovery_method": "path_probe",
+          "source_relevance": "privacy_security",
+          "http_status": 200,
+          "extraction_status": "ok",
+          "failure_reason": null,
+          "title": "Privacy Policy | FSSI",
+          "content_length_chars": 35824,
+          "retrieved_at": "2026-10-13T18:12:36+00:00",
+          "elapsed_seconds": 2.9
+        }
+      ],
+      "successful_non_empty_pages": {
+        "count": 2,
+        "urls": [
+          "https://www.fssi-ca.com/",
+          "https://www.fssi-ca.com/privacy"
+        ]
+      },
+      "empty_or_js_rendered_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "soft_404_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "failed_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "evidence_excerpts": [
+        {
+          "evidence_id": "a98eb26f",
+          "category": "data_processing",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "Learn More Secure Data Processing Secure Data Processing Quick View Ensure the security, accuracy and precise composition of customer documents.",
+          "source_url": "https://www.fssi-ca.com/",
+          "matched_terms": [
+            "Data Processing"
+          ],
+          "rationale": "Matched term(s): Data Processing. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        },
+        {
+          "evidence_id": "f745e732",
+          "category": "security_control",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "About Dependability Innovation Innovation Sophisticated and Creative Solutions Innovation Sophisticated and Creative Solutions Long-Standing Expertise Industry Leaders Custom Designs Do-it-Yourself Mantra Explore Industry Relationships Industry Relationships Strategic, Long-Standing Partnerships Industry Relationships Strategic, Long-Standing Partnerships Specially-Reduced Rates Early Access to Opportunities Stable, Controlled Costs Exclusive News and Announcements Explore FSSI Values FSSI Values Core Foundational Principles FSSI Values Core Foundational Principles Employee-Owners Dedicated and Responsive Service FSSI Core Values Explore Equipment & Technology Equipment & Technology Continue",
+          "source_url": "https://www.fssi-ca.com/",
+          "matched_terms": [
+            "SOC 2"
+          ],
+          "rationale": "Matched term(s): SOC 2. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        },
+        {
+          "evidence_id": "a1d520d0",
+          "category": "data_processing",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "The Purpose of the Privacy Policy This Policy, more specifically, is intended to provide consumers with information about how we collect, use, disclose, retain, and safeguard certain personal information we gather about them, such as through the: Use of our websites, including mobile websites, applications (collectively, the \u201cSite\u201d) Phone and email communications Social media interactions, such as through Facebook, Twitter, Instagram, or LinkedIn Viewing our online advertisements or emails For California residents, visits to our offices or attendance at one of our events It also describes options consumers may have concerning their personal information.",
+          "source_url": "https://www.fssi-ca.com/privacy/",
+          "matched_terms": [
+            "retain"
+          ],
+          "rationale": "Matched term(s): retain. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        },
+        {
+          "evidence_id": "8a2d45e5",
+          "category": "privacy_commitment",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "Privacy Policy Last Updated: April 4, 2024 FSSI (sometimes referred to as \u201cCompany,\u201d \u201cus,\u201d \u201cwe,\u201d or \u201cour\u201d) adopted this privacy policy (\u201cPrivacy Policy\u201d or \u201cPolicy\u201d) to describe our policies and practices concerning the personal information we collect about consumers.",
+          "source_url": "https://www.fssi-ca.com/privacy/",
+          "matched_terms": [
+            "Privacy Policy"
+          ],
+          "rationale": "Matched term(s): Privacy Policy. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        },
+        {
+          "evidence_id": "0a1d81c6",
+          "category": "third_party_sharing",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "This Policy does not apply to third-party websites accessible through our Site or other applications.",
+          "source_url": "https://www.fssi-ca.com/privacy/",
+          "matched_terms": [
+            "third-party"
+          ],
+          "rationale": "Matched term(s): third-party. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        }
+      ],
+      "assessment": {
+        "status": "insufficient_evidence",
+        "risk_level": "not_rated",
+        "risk_score": null,
+        "drivers": [
+          "intake criticality high (82.0)"
+        ],
+        "caveats": [
+          "Public-web heuristics are incomplete and can miss or overstate AI usage.",
+          "Keyword matches are not confirmation of product behaviour or control effectiveness.",
+          "Absence of public evidence is not proof that the vendor does not use AI.",
+          "Treat this as a draft for analyst review, not an audit opinion.",
+          "Other keywords or a provider disclosure may be present, but no AI capability claim was identified.",
+          "Not rated does not mean low risk or no AI usage."
+        ]
+      },
+      "unresolved_research_gaps": [
+        "No specific AI feature claim found in public documentation."
+      ]
+    },
+    {
+      "name": "Terrapin Technologies, Inc.",
+      "vendor_id": "V-004",
+      "product": "A wealth management data solution that consolidates data from multiple sources and supports commission calculations, accounting activities and business volume tracking.",
+      "website": "www.terrapintech.com",
+      "criticality": {
+        "score": 73.0,
+        "level": "medium"
+      },
+      "candidate_count": 4,
+      "fetchable_count": 2,
+      "search_lead_count": 2,
+      "urls_attempted": [
+        {
+          "url": "https://www.terrapintech.com/",
+          "final_url": "https://www.terrapintech.com/",
+          "discovery_method": "official_intake",
+          "source_relevance": "service_direct",
+          "http_status": 202,
+          "extraction_status": "empty",
+          "failure_reason": "No visible text was extracted after removing boilerplate.",
+          "title": null,
+          "content_length_chars": 0,
+          "retrieved_at": null,
+          "elapsed_seconds": 1.2
+        },
+        {
+          "url": "https://www.terrapintech.com/privacy",
+          "final_url": "https://www.terrapintech.com/privacy",
+          "discovery_method": "path_probe",
+          "source_relevance": "privacy_security",
+          "http_status": 202,
+          "extraction_status": "empty",
+          "failure_reason": "No visible text was extracted after removing boilerplate.",
+          "title": null,
+          "content_length_chars": 0,
+          "retrieved_at": null,
+          "elapsed_seconds": 1.0
+        }
+      ],
+      "successful_non_empty_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "empty_or_js_rendered_pages": {
+        "count": 2,
+        "urls": [
+          "https://www.terrapintech.com/",
+          "https://www.terrapintech.com/privacy"
+        ]
+      },
+      "soft_404_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "failed_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "evidence_excerpts": [],
+      "assessment": {
+        "status": "insufficient_evidence",
+        "risk_level": "not_rated",
+        "risk_score": null,
+        "drivers": [],
+        "caveats": [
+          "Public-web heuristics are incomplete and can miss or overstate AI usage.",
+          "Keyword matches are not confirmation of product behaviour or control effectiveness.",
+          "Absence of public evidence is not proof that the vendor does not use AI.",
+          "Treat this as a draft for analyst review, not an audit opinion.",
+          "No classified public-text evidence was available for this vendor.",
+          "Not rated does not mean low risk or no AI usage."
+        ]
+      },
+      "unresolved_research_gaps": [
+        "Public sources have not been fetched or reviewed."
+      ]
+    },
+    {
+      "name": "BNY",
+      "vendor_id": "V-005",
+      "product": "Real Time Payments (RTP) transmission services, including facilitating the transmission of RTP payment files from other financial institutions to Meridian.",
+      "website": "www.bny.com",
+      "criticality": {
+        "score": 85.75,
+        "level": "high"
+      },
+      "candidate_count": 5,
+      "fetchable_count": 3,
+      "search_lead_count": 2,
+      "urls_attempted": [
+        {
+          "url": "https://www.bny.com/",
+          "final_url": "https://www.bny.com/corporate/global/en.html",
+          "discovery_method": "official_intake",
+          "source_relevance": "service_direct",
+          "http_status": 200,
+          "extraction_status": "ok",
+          "failure_reason": null,
+          "title": "BNY | Global Financial Services",
+          "content_length_chars": 4744,
+          "retrieved_at": "2026-10-13T18:12:40+00:00",
+          "elapsed_seconds": 1.2
+        },
+        {
+          "url": "https://www.bny.com/privacy",
+          "final_url": "https://www.bny.com/privacy",
+          "discovery_method": "path_probe",
+          "source_relevance": "privacy_security",
+          "http_status": null,
+          "extraction_status": "failed",
+          "failure_reason": "HTTP 404 from https://www.bny.com/privacy",
+          "title": null,
+          "content_length_chars": 0,
+          "retrieved_at": null,
+          "elapsed_seconds": 1.8
+        },
+        {
+          "url": "https://www.bny.com/corporate/global/en/legal/privacy-notice.html",
+          "final_url": "https://www.bny.com/corporate/global/en/legal/privacy-notice.html",
+          "discovery_method": "known_official",
+          "source_relevance": "privacy_security",
+          "http_status": null,
+          "extraction_status": "failed",
+          "failure_reason": "HTTP 404 from https://www.bny.com/corporate/global/en/legal/privacy-notice.html",
+          "title": null,
+          "content_length_chars": 0,
+          "retrieved_at": null,
+          "elapsed_seconds": 0.6
+        }
+      ],
+      "successful_non_empty_pages": {
+        "count": 1,
+        "urls": [
+          "https://www.bny.com/"
+        ]
+      },
+      "empty_or_js_rendered_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "soft_404_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "failed_pages": {
+        "count": 2,
+        "urls": [
+          "https://www.bny.com/privacy",
+          "https://www.bny.com/corporate/global/en/legal/privacy-notice.html"
+        ]
+      },
+      "evidence_excerpts": [],
+      "assessment": {
+        "status": "insufficient_evidence",
+        "risk_level": "not_rated",
+        "risk_score": null,
+        "drivers": [],
+        "caveats": [
+          "Public-web heuristics are incomplete and can miss or overstate AI usage.",
+          "Keyword matches are not confirmation of product behaviour or control effectiveness.",
+          "Absence of public evidence is not proof that the vendor does not use AI.",
+          "Treat this as a draft for analyst review, not an audit opinion.",
+          "No classified public-text evidence was available for this vendor.",
+          "Not rated does not mean low risk or no AI usage."
+        ]
+      },
+      "unresolved_research_gaps": [
+        "Public sources have not been fetched or reviewed."
+      ]
+    },
+    {
+      "name": "The Clearing House Payments Company L.L.C.",
+      "vendor_id": "V-006",
+      "product": "Payment network infrastructure services, including the transmission and processing of ACH transactions and Real-Time Payments.",
+      "website": "www.theclearinghouse.org",
+      "criticality": {
+        "score": 76.25,
+        "level": "critical"
+      },
+      "candidate_count": 7,
+      "fetchable_count": 5,
+      "search_lead_count": 2,
+      "urls_attempted": [
+        {
+          "url": "https://www.theclearinghouse.org/",
+          "final_url": "https://www.theclearinghouse.org/",
+          "discovery_method": "official_intake",
+          "source_relevance": "service_direct",
+          "http_status": 200,
+          "extraction_status": "ok",
+          "failure_reason": null,
+          "title": "Home | The Clearing House",
+          "content_length_chars": 2181,
+          "retrieved_at": "2026-10-13T18:12:44+00:00",
+          "elapsed_seconds": 1.8
+        },
+        {
+          "url": "https://www.theclearinghouse.org/privacy",
+          "final_url": "https://www.theclearinghouse.org/404?item=%2fprivacy&user=extranet%5cAnonymous&site=tch",
+          "discovery_method": "path_probe",
+          "source_relevance": "privacy_security",
+          "http_status": 200,
+          "extraction_status": "soft_404",
+          "failure_reason": "Soft 404: Title or content indicates error page ('Page Not Found | The Clearing House').",
+          "title": "Page Not Found | The Clearing House",
+          "content_length_chars": 0,
+          "retrieved_at": null,
+          "elapsed_seconds": 2.2
+        },
+        {
+          "url": "https://www.theclearinghouse.org/payment-systems/rtp",
+          "final_url": "https://www.theclearinghouse.org/payment-systems/rtp",
+          "discovery_method": "known_official",
+          "source_relevance": "service_direct",
+          "http_status": 200,
+          "extraction_status": "ok",
+          "failure_reason": null,
+          "title": "Real Time Payments | The Clearing House",
+          "content_length_chars": 5592,
+          "retrieved_at": "2026-10-13T18:12:48+00:00",
+          "elapsed_seconds": 1.8
+        },
+        {
+          "url": "https://www.theclearinghouse.org/payment-systems/ach",
+          "final_url": "https://www.theclearinghouse.org/payment-systems/ach",
+          "discovery_method": "known_official",
+          "source_relevance": "service_direct",
+          "http_status": 200,
+          "extraction_status": "ok",
+          "failure_reason": null,
+          "title": "ACH Services | EPN Network ACH Processing | The Clearing House | The Clearing House",
+          "content_length_chars": 8842,
+          "retrieved_at": "2026-10-13T18:12:50+00:00",
+          "elapsed_seconds": 2.0
+        },
+        {
+          "url": "https://www.theclearinghouse.org/legal-privacy",
+          "final_url": "https://www.theclearinghouse.org/404?item=%2flegal-privacy&user=extranet%5cAnonymous&site=tch",
+          "discovery_method": "known_official",
+          "source_relevance": "privacy_security",
+          "http_status": 200,
+          "extraction_status": "soft_404",
+          "failure_reason": "Soft 404: Title or content indicates error page ('Page Not Found | The Clearing House').",
+          "title": "Page Not Found | The Clearing House",
+          "content_length_chars": 0,
+          "retrieved_at": null,
+          "elapsed_seconds": 2.8
+        }
+      ],
+      "successful_non_empty_pages": {
+        "count": 3,
+        "urls": [
+          "https://www.theclearinghouse.org/",
+          "https://www.theclearinghouse.org/payment-systems/rtp",
+          "https://www.theclearinghouse.org/payment-systems/ach"
+        ]
+      },
+      "empty_or_js_rendered_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "soft_404_pages": {
+        "count": 2,
+        "urls": [
+          "https://www.theclearinghouse.org/privacy",
+          "https://www.theclearinghouse.org/legal-privacy"
+        ]
+      },
+      "failed_pages": {
+        "count": 0,
+        "urls": []
+      },
+      "evidence_excerpts": [
+        {
+          "evidence_id": "8d14f73f",
+          "category": "third_party_sharing",
+          "relevance": "service_specific",
+          "verification_status": "unverified",
+          "heuristic_score": 0.55,
+          "snippet": "Third-Party Service Providers: Your Fast Track to the RTP network Connecting to the RTP network doesn't require a complex lift.",
+          "source_url": "https://www.theclearinghouse.org/payment-systems/rtp",
+          "matched_terms": [
+            "Third-Party",
+            "Service Providers"
+          ],
+          "rationale": "Matched term(s): Third-Party, Service Providers. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        },
+        {
+          "evidence_id": "4eca21bc",
+          "category": "third_party_sharing",
+          "relevance": "ambiguous",
+          "verification_status": "unverified",
+          "heuristic_score": 0.45,
+          "snippet": "It supports two common data-sharing models: Direct model : a financial institution connects directly to the DDA Token Service to support its data-sharing flows Using a Technical Agent : a third party can request tokens on behalf of a participating financial institution, which may reduce implementation efforts For compliance research purposes, The Clearing House supports the translation of tokens to the associated underlying account numbers so financial institutions' monitoring reporting processes can accommodate tokenized identifiers.",
+          "source_url": "https://www.theclearinghouse.org/payment-systems/ach",
+          "matched_terms": [
+            "third party"
+          ],
+          "rationale": "Matched term(s): third party. Heuristic match only, not a conclusion. Generic non-AI disclosure; not evidence of AI usage; does not establish AI usage."
+        }
+      ],
+      "assessment": {
+        "status": "insufficient_evidence",
+        "risk_level": "not_rated",
+        "risk_score": null,
+        "drivers": [
+          "intake criticality critical (76.2)"
+        ],
+        "caveats": [
+          "Public-web heuristics are incomplete and can miss or overstate AI usage.",
+          "Keyword matches are not confirmation of product behaviour or control effectiveness.",
+          "Absence of public evidence is not proof that the vendor does not use AI.",
+          "Treat this as a draft for analyst review, not an audit opinion.",
+          "Other keywords or a provider disclosure may be present, but no AI capability claim was identified.",
+          "Not rated does not mean low risk or no AI usage."
+        ]
+      },
+      "unresolved_research_gaps": [
+        "No specific AI feature claim found in public documentation."
+      ]
+    }
+  ],
+  "totals": {
+    "candidate_count": 31,
+    "successful_non_empty_pages": 12,
+    "failed_pages": 3,
+    "soft_404_pages": 2,
+    "empty_or_js_rendered_pages": 2,
+    "evidence_excerpts_count": 17
+  }
+}

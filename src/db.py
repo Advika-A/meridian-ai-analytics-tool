@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS vendors (
     id INTEGER PRIMARY KEY,
-    name TEXT NOT NULL,
+    name TEXT NOT NULL UNIQUE,
     product TEXT,
     website TEXT,
     attributes_json TEXT NOT NULL DEFAULT '{}',
@@ -47,7 +47,8 @@ CREATE TABLE IF NOT EXISTS sources (
     source_type TEXT NOT NULL,
     reason TEXT NOT NULL,
     created_at TEXT NOT NULL,
-    FOREIGN KEY (vendor_id) REFERENCES vendors(id)
+    FOREIGN KEY (vendor_id) REFERENCES vendors(id),
+    UNIQUE (vendor_id, url)
 );
 
 CREATE TABLE IF NOT EXISTS evidence (
@@ -61,8 +62,11 @@ CREATE TABLE IF NOT EXISTS evidence (
     source_title TEXT NOT NULL DEFAULT '',
     retrieved_at TEXT,
     matched_terms_json TEXT NOT NULL DEFAULT '[]',
+    verification_status TEXT NOT NULL DEFAULT 'unverified',
+    reviewer_notes TEXT NOT NULL DEFAULT '',
     created_at TEXT NOT NULL,
-    FOREIGN KEY (vendor_id) REFERENCES vendors(id)
+    FOREIGN KEY (vendor_id) REFERENCES vendors(id),
+    UNIQUE (vendor_id, snippet)
 );
 """
 
@@ -84,7 +88,8 @@ def connect(path: str | Path) -> sqlite3.Connection:
         connection.row_factory = sqlite3.Row
         connection.execute("PRAGMA foreign_keys = ON")
         connection.executescript(SCHEMA)
-        # Additive migration for databases created by earlier project versions.
+
+        # Additive migration for evidence table
         existing_columns = {
             row[1] for row in connection.execute("PRAGMA table_info(evidence)").fetchall()
         }
@@ -92,6 +97,9 @@ def connect(path: str | Path) -> sqlite3.Connection:
             ("source_title", "TEXT NOT NULL DEFAULT ''"),
             ("retrieved_at", "TEXT"),
             ("matched_terms_json", "TEXT NOT NULL DEFAULT '[]'"),
+            ("verification_status", "TEXT NOT NULL DEFAULT 'unverified'"),
+            ("relevance", "TEXT NOT NULL DEFAULT 'ambiguous'"),
+            ("reviewer_notes", "TEXT NOT NULL DEFAULT ''"),
         ):
             if column not in existing_columns:
                 connection.execute(f"ALTER TABLE evidence ADD COLUMN {column} {declaration}")
@@ -103,12 +111,17 @@ def connect(path: str | Path) -> sqlite3.Connection:
 
 
 def upsert_vendor(connection: sqlite3.Connection, vendor: VendorRecord) -> int:
-    """Insert a vendor row and return its id."""
+    """Insert or update a vendor row idempotently and return its id."""
     try:
         cursor = connection.execute(
             """
             INSERT INTO vendors (name, product, website, attributes_json, created_at)
             VALUES (?, ?, ?, ?, ?)
+            ON CONFLICT(name) DO UPDATE SET
+                product = excluded.product,
+                website = excluded.website,
+                attributes_json = excluded.attributes_json
+            RETURNING id
             """,
             (
                 vendor.name,
@@ -118,10 +131,11 @@ def upsert_vendor(connection: sqlite3.Connection, vendor: VendorRecord) -> int:
                 _now(),
             ),
         )
+        row = cursor.fetchone()
         connection.commit()
+        return int(row[0])
     except sqlite3.Error as exc:
         raise DatabaseError(f"Failed to store vendor {vendor.name}: {exc}") from exc
-    return int(cursor.lastrowid)
 
 
 def save_assessment(
@@ -163,18 +177,16 @@ def save_sources(
     vendor_id: int,
     sources: list[SourceCandidate],
 ) -> None:
-    """Store discovered source candidates."""
+    """Store discovered source candidates without duplicating on reruns."""
     try:
-        connection.executemany(
-            """
-            INSERT INTO sources (vendor_id, url, source_type, reason, created_at)
-            VALUES (?, ?, ?, ?, ?)
-            """,
-            [
-                (vendor_id, item.url, item.source_type, item.reason, _now())
-                for item in sources
-            ],
-        )
+        for item in sources:
+            connection.execute(
+                """
+                INSERT OR IGNORE INTO sources (vendor_id, url, source_type, reason, created_at)
+                VALUES (?, ?, ?, ?, ?)
+                """,
+                (vendor_id, item.url, item.source_type, item.reason, _now()),
+            )
         connection.commit()
     except sqlite3.Error as exc:
         raise DatabaseError(f"Failed to store sources: {exc}") from exc
@@ -185,16 +197,25 @@ def save_evidence(
     vendor_id: int,
     evidence: list[EvidenceItem],
 ) -> None:
-    """Store classified evidence snippets."""
+    """Store classified evidence snippets without duplicating on reruns."""
     try:
-        connection.executemany(
-            """
-            INSERT INTO evidence (
-                vendor_id, category, snippet, heuristic_score, rationale, source_url,
-                source_title, retrieved_at, matched_terms_json, created_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """,
-            [
+        for item in evidence:
+            connection.execute(
+                """
+                INSERT INTO evidence (
+                    vendor_id, category, snippet, heuristic_score, rationale, source_url,
+                    source_title, retrieved_at, matched_terms_json, verification_status,
+                    relevance, reviewer_notes, created_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ON CONFLICT(vendor_id, snippet) DO UPDATE SET
+                    category = excluded.category,
+                    heuristic_score = excluded.heuristic_score,
+                    rationale = excluded.rationale,
+                    source_title = excluded.source_title,
+                    verification_status = excluded.verification_status,
+                    relevance = excluded.relevance,
+                    reviewer_notes = excluded.reviewer_notes
+                """,
                 (
                     vendor_id,
                     item.category,
@@ -205,11 +226,12 @@ def save_evidence(
                     item.source_title,
                     item.retrieved_at,
                     json.dumps(item.matched_terms),
+                    getattr(item, "verification_status", "unverified"),
+                    getattr(item, "relevance", "ambiguous"),
+                    getattr(item, "reviewer_notes", ""),
                     _now(),
-                )
-                for item in evidence
-            ],
-        )
+                ),
+            )
         connection.commit()
     except sqlite3.Error as exc:
         raise DatabaseError(f"Failed to store evidence: {exc}") from exc
